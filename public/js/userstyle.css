@@ -1,0 +1,310 @@
+body,
+html {
+    background: #FFBE98;
+}
+
+/* ENTIRE PAGE CONTAINER */
+.full-screen-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+
+}
+
+/* LEFT SIDE CONTAINER BOX THAT HOLDS THE CATEGORY SELECTOR BOXES */
+.container-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: white;
+    width: 30%;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+}
+
+
+/* TOP/LEFT LOGO CONTAINER */
+.logo-holder {
+    position: relative;
+    width: 100%;
+    height: 30%;
+}
+
+.logo-background {
+    width: 150%;
+    height: 100%;
+    margin: 0;
+}
+
+.logo-foreground {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+/* HOLDER CONTAINING THE SELECTOR BOXES FOR SPECIFIC FOOD ITEMS */
+.category-holder {
+    background: white;
+    position: absolute;
+    width: 100%;
+    bottom: 25%;
+}
+
+/* EACH SPECIFIED FOOD CATEGORY */
+.category {
+    position: relative;
+    background: white;
+    border: 1px solid grey;
+    width: 95%;
+    height: 10%;
+    left: .5em;
+    margin-top: 10px;
+    text-align: auto;
+    border-radius: 10px;
+}
+
+.drop-click {
+    width: 100%;
+    display: block;
+    font-size: 1.1em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin: 10px auto;
+    color: white;
+    background-color: #b8b8b8;
+    background: linear-gradient(#cac8c8, #888888);
+    border: 0 none;
+    box-shadow: 2px 2px 2px 2px gray;
+    cursor: pointer;
+}
+
+.drop-click:hover {
+    background-color: #ddd;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    text-decoration-color: rgb(35, 99, 218);
+    width: 102%;
+}
+
+.cat-drop {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.category-dropdown {
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    right: -20em;
+    top: 0;
+    background-color: #f1f1f1;
+    min-width: 20em;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px -8px -16px 0px #f0f0f0;
+    z-index: 1;
+}
+
+.category-dropdown button {
+    box-shadow: 2px gray;
+    color: black;
+    padding: 12px 16px;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+}
+
+.category-dropdown button:hover {
+    color: black;
+    border: none;
+    outline: none;
+    background: #ddd;
+    padding: 12px 16px;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+}
+
+.cateogry-dropdown button:focus {
+    outline: none !important;
+    border: none;
+}
+
+
+
+.show {
+    display: block;
+}
+
+
+/* ------------------------------------------------------ */
+/* RIGHT SIDE CONTAINER BOX HOLDING JOMBO-CONTAINER & THE RETURNED RECIPE CONTAINER CONTAINER */
+
+.container-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #F5BAFF;
+    border: 1px solid grey;
+    width: 70%;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 1em;
+    text-align: center;
+    padding: 1em;
+}
+
+/* FULL TOP CONTAINER INCLUDING WELCOME MESSAGE AND DROPDOWN NAVBAR */
+.jumbo-container {
+    position: relative;
+    background: white;
+    width: 100%;
+    height: 30%;
+    text-align: auto;
+    z-index: 999;
+}
+
+/* WELCOME PROMPT PLACED AT THE TOP OF THE PAGE */
+.jumbotron-welcome {
+    height: 50%;
+    width: 100%;
+    background: white;
+}
+
+.banner {
+    font-size: 3em;
+    font-family: 'Oleo Script', cursive;
+    color: black;
+    text-shadow: 0 2px 2px #858484;
+    text-shadow: 0px 0px 2px 3px gray;
+    padding: 20px;
+}
+
+/* BUTTON FOR SEARCHING CURRENT INVENTORY SELECTOR- TO BE PASSED THROUGH THE API */
+.dropbtn {
+    width: 300%;
+    display: block;
+    font-size: 1.1em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin: 10px auto;
+    color: white;
+    background-color: #b8b8b8;
+    background: -webkit-linear-gradient(#cac8c8, #555);
+    background: linear-gradient(#cac8c8, #888888);
+    border: 0 none;
+    box-shadow: 2px 2px 2px 2px gray;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background: #dddddd;
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    text-transform: uppercase;
+    border-radius: 0 0 10px 10px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 4em;
+    width: 300%;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px #6261619b;
+    background-color: white;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    background: white;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+.show {
+    display: block;
+}
+
+
+/* BEGINNING OF THE RETURNED OBJECTS FROM THE SEARCH OF THE RECIPES */
+
+.return-container {
+    align-items: center;
+}
+
+.return-object {
+    position: relative;
+    width: 98%;
+    height: 30em;
+    background: white;
+    border: 1px solid gray;
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: 8px;
+}
+
+.object {
+    width: 10em;
+    height: 10em;
+    margin: 5px;
+    background-color: greenyellow;
+    position: relative;
+    float: left;
+}
+
+.ret-label {
+    padding: 2px;
+}
+
+
+@media only screen and (max-width: 640px) {
+
+    .dropdown-content {
+        position: absolute;
+        left: 0;
+        top: 4em;
+        width: 20em;
+        text-align: center;
+        box-shadow: 2px 2px 2px 2px #6261619b;
+        background-color: white;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+}

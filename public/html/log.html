@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Foodify</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../photos/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../photos/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../photos/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../photos/favicon_io/site.webmanifest">
+
+    <!-- CSS  -->
+    <link href="/styles/reset.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Abril+Fatface|Fredericka+the+Great|Pacifico|Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css" rel="stylesheet">
+    <link href="/styles/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/styles/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body class="logo-page-background responsive-img">
+    <nav class="indigo lighten-4" role="navigation">
+        <div class="nav-wrapper container">
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/log.html">Login</a></li>
+                <li><a href="/html/signup.html">Sign Up</a></li>
+
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/log.html">Login</a></li>
+                <li><a href="/html/signup.html">Sign Up</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+
+
+
+
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row">
+                    <div class="col m4">
+                    </div>
+                    <div class="col m4">
+                        <a id="logo-container" class="brand-logo logo-center"><img class="responsive-img"
+                                src="/photos/Logo.png" class="center"></a>
+                    </div>
+                    <div class="col m4">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container ">
+        <div class="section">
+            <div id="user-login" class="row">
+                <div class="col s12 z-depth-6 card-panel">
+                    <form class="login-form">
+                        <div class="row center">
+                            <h5 class=" header black-text col s12 light">Login and Cook with Us</h5>
+                        </div>
+                        <div class="row margin">
+                            <div class="input-field col s12">
+                                <i class="mdi-social-person-outline prefix"></i>
+                                <input class="validate" id="user_email" type="email">
+                                <label for="email" data-error="wrong" data-success="right"
+                                    class="center-align">Name</label>
+                            </div>
+                        </div>
+                        <div class="row margin">
+                            <div class="input-field col s12">
+                                <i class="mdi-action-lock-outline prefix"></i>
+                                <input id="user_pass" type="password">
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <button id="findUsser" class="btn waves-effect waves-light black col s12">Login</button >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6 m6 l6">
+                                <p class="margin medium-small"><a href="/html/signup.html">Sign Up Now!</a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="page-footer  blue lighten-4">
+        <div class="center">
+            <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+            <a href="https://twitter.com" class="fa fa-twitter" target="_blank"></a>
+        </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    <script src="/js/log.js"></script>
+    <script src="/js/materialize.js"></script>
+    <script src="/js/init.js"></script>
+    </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Foodify</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/photos/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/photosfavicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/photos/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/photos/favicon_io/site.webmanifest">
+
+    <!-- CSS  -->
+
+    <link href="/styles/reset.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Abril+Fatface|Fredericka+the+Great|Pacifico|Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/styles/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/styles/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body class="signUp-background">
+
+    <nav class="indigo lighten-4" role="navigation">
+        <div class="nav-wrapper container">
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/log.html">Login</a></li>
+                <li><a href="/html/signup.html">Sign Up</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="/html/log.html">Login</a></li>
+                <li><a href="/html/signup.html">Sign Up</a></li>
+            </ul>
+
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row">
+                    <div class="col m4">
+                    </div>
+                    <div class="col m4">
+                        <a id="logo-container" class="brand-logo logo-center"><img class="responsive-img"
+                                src="/photos/Logo.png" class="center"></a>
+                    </div>
+                    <div class="col m4">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="section">
+
+            <div class="row">
+
+                <div id="register-page" class="row">
+                    <div class="col s12 z-depth-6 card-panel">
+                        <form class="register-form">
+                            <div class="row center">
+                                <h5 class=" header black-text col s12 light">Sign Up, Cooking Ahead</h5>
+                            </div>
+                            <div class="row margin">
+                                <div class="input-field col s12">
+                                    <i class="mdi-social-person-outline prefix"></i>
+                                    <input id="user_name" type="text" class="validate">
+                                    <label for="user_name" class="center-align">Username</label>
+                                </div>
+                            </div>
+                            <!-- <div class="row margin">
+                                <div class="input-field col s12">
+                                    <i class="mdi-communication-email prefix"></i>
+                                    <input id="user_email" type="email" class="validate">
+                                    <label for="user_email" class="center-align">Email</label>
+                                </div>
+                            </div> -->
+                            <div class="row margin">
+                                <div class="input-field col s12">
+                                    <i class="mdi-action-lock-outline prefix"></i>
+                                    <input id="user_passw" type="password" class="validate">
+                                    <label for="user_passw">Password</label>
+                                </div>
+                            </div>
+                            <!-- <div class="row margin">
+                                <div class="input-field col s12">
+                                    <i class="mdi-action-lock-outline prefix"></i>
+                                    <input id="confirm_pass" type="password">
+                                    <label for="confirm_pass">Re-type password</label>
+                                </div>
+                            </div> -->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <button onclick="creatingUsser()"
+                                        class="btn waves-effect waves-light black col s12">Sign Up</button>
+                                </div>
+                                <div class="input-field col s12">
+                                    <p class="margin center medium-small sign-up">Already have an account? <a
+                                            href="/html/log.html">Login</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="page-footer  blue lighten-4">
+        <div class="center">
+            <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+            <a href="https://twitter.com" class="fa fa-twitter" target="_blank"></a>
+        </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    <script src="/js/materialize.js"></script>
+    <script src="/js/init.js"></script>
+    <script src="/js/signup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Foodify User Page</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/userstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!-- container for the entire page -->
+    <div class="full-screen-container">
+
+        <!-- (Top-to-Bottom) left side user page container (holding main table items) -->
+        <div class="container-left">
+            <div class="logo-holder">
+                <img class="logo-background" src="../photos/food.jpg" alt="Logo Background">
+                <img class="logo-foreground" src="../photos/logo.png" alt="Logo Foreground">
+            </div>
+
+            <!-- Category holder for the -->
+            <div class="category-holder">
+
+                <div class="cat-drop">
+                    <button onclick="catFunctionProtein()" class="drop-click">Protein</button>
+                    <div id="proteinDropdown" class="category-dropdown">
+                        <button  id="pork" class="food">Pork</button>
+                        <button  id="chicken" class="food">Chicken</button>
+                        <button  id="fish" class=" food">Fish</button>
+                        <button  id="beef" class="food">Beef</button>
+
+                    </div>
+                </div>
+                <br>
+
+                <!-- input section to enter a new category and food item to the list above -->
+                <div class="cat-drop">
+                    <button onclick="catFunctionVeggie()" class="drop-click">Vegetable</button>
+                    <div id="veggiesDropdown" class="category-dropdown">
+                        <button  id="broccoli" class="food">Broccoli</button>
+                        <button  id="bean" class="food">Green Beans</button>
+                        <button  id="lettuce" class="food">Lettuce</button>
+                        <button  id="tomato" class="food">Tomato</button>
+                    </div>
+                </div>
+
+                <div class="cat-drop">
+                    <button onclick="catFunctionCarb()" class="drop-click">Carbohydrate</button>
+                    <div id="carbDropdown" class="category-dropdown">
+                        <button id="rice"  class="food" >Rice</button>
+                        <button  class="food" id="bread">Bread</button>
+                        <button  class="food" id="oatmeal">Oatmeal</button>
+                        <button  class="food" id="pasta">Pasta</button>
+                    </div>
+                </div>
+
+                <div class="cat-drop">
+                    <button onclick="catFunctionDairy()" class="drop-click">Dairy</button>
+                    <div id="dairyDropdown" class="category-dropdown">
+                        <button  id="milk" class="food">Milk</button>
+                        <button  id="cheese" class="food">Cheese</button>
+                        <button  id="sour cream" class="food">Sour Cream</a>
+                            <button  id="cream" class="food">Cream</button>
+                    </div>
+                </div>
+            </div>
+            <form class="new-item">
+                <select id="choice">
+                    <option selected value="base">SELECT CATEGORY</option>
+                    <option value="protein">PROTEIN</option>
+                    <option value="vegetable">VEGETABLE</option>
+                    <option value="carbohydrate">CARBOHYDRATE</option>
+                    <option value="dairy">DAIRY</option>
+                </select>
+                <br>
+                <br>
+                <div class="new-ingredient form-group">
+                    <label for="exampleInputItem">FOOD ITEM</label>
+                    <input type="text" class="form-control" id="new-food-item">
+                </div>
+                <br>
+
+                <!-- BOTTOM LEFT CORNER FOR THE SUBMIT BUTTON AND LOGOUT -->
+                <a href=""></a><button class="logout">Log Out</button></a>
+                <br>
+                <br>
+                <button class="submit">Submit New Item</button>
+            </form>
+        </div>
+
+        <!-- (Top-to-Bottom) right side user page container -->
+        <div class="container-right">
+
+            <!-- Welcome Banner holder -->
+            <div class="jumbo-container">
+                <h1 class="banner"><strong>"Welcome to Foodify <span id="myname">test</span>!"</strong></h1>
+                <!-- current inventory button -->
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Current Inventory</button>
+                    <div id="myDropdown" class="dropdown-content">
+
+                        <button id="invbroccoli" class="ingredient">Broccoli<i
+                                class="material-icons">delete</i></button>
+                        <!-- <button id="french bread" class="ingredient">French Bread<i class="material-icons">delete</i></button>
+                                
+                        <button id="milk" class="ingredient"><i class="material-icons">delete</i>Milk</button> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- CONTAINER THAT WILL HOLD THE ITEMS RETURNED WHEN PASSED THROUGH API -->
+            <div class="return-container">
+                <div class="return-object">
+
+
+                    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                    <input id="search" ><button onclick="getrecepe(document.getElementById('search').value)">Search</button>
+                    <div id="output"></div>
+                    <a href="" id="sourceLink"></a>
+                    <script>
+                    
+                    function getsource(id){
+                    $.ajax({
+                    url:"https://api.spoonacular.com/recipes/"+id+"/information?apiKey=db254b5cd61744d39a2deebd9c361444",
+                    success: function(res) {
+                    
+                    document.getElementById("sourceLink").innerHTML=res.sourceUrl
+                    document.getElementById("sourceLink").href=res.sourceUrl
+                    }
+                    });
+                    }
+                    function getrecepe(q){
+                    $.ajax({
+                    url:"https://api.spoonacular.com/recipes/search?apiKey=db254b5cd61744d39a2deebd9c361444&number=1&query="+q,
+                    success: function(res) {
+                    
+                    document.getElementById("output").innerHTML="<h1>"+res.results[0].title+"</h1><br><img src='"+res.baseUri+res.results[0].image+"' width='250' /><br>Ready in "+res.results[0].readyInMinutes+" minutes"
+                    getsource(res.results[0].id)
+                    }
+                    });
+                    }
+                    
+                    </script>
+                    
+
+
+                    <!-- <div class=" object">
+                        <p> Recipe returned</p> 
+                            <div class="image-holder"><img src="https://spoonacular.com/recipeImages/601227-312x231.jpg">
+                             </img></div>
+                    </div>
+
+
+                    <div class=" object">
+                        <p> Recipe returned</p> 
+                            <div class="image-holder"><img src="https://spoonacular.com/recipeImages/601227-312x231.jpg">
+                            </img></div>
+                    </div>
+
+
+ 
+                    <div class=" object">
+                        <p> Recipe returned</p> 
+                            <div class="image-holder"><img src="https://spoonacular.com/recipeImages/601227-312x231.jpg">
+                            </img></div>
+                    </div>
+
+
+
+                    <div class=" object">
+                        <p> Recipe returned</p> 
+                            <div class="image-holder"><img src="https://spoonacular.com/recipeImages/601227-312x231.jpg">
+                            </img></div>
+                    </div> -->
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+                                            </script>
+
+                                            <script
+                                                src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                                                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                                                crossorigin="anonymous"></script>
+
+                                            <script
+                                                src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                                                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                                                crossorigin="anonymous"></script>
+
+
+
+                                            <script type="text/javascript" src="../js/user.js"></script>
+
+
+</body>
+
+</html>

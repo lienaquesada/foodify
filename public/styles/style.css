@@ -1,0 +1,186 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.background-image{
+  margin-top: 5%;
+
+}
+.header{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 32px;
+}
+
+.juliaChild{
+  background-image: url(../photos) ;
+  background-repeat: repeat;
+}
+.quote {
+  margin-top: 50px;
+  font-size: 30px;
+  font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+}
+.Julia{
+  font-size: 25px;
+
+}
+.carousel-item{
+  font-family: 'Permanent Marker', cursive;
+height: 600px;
+}
+
+
+
+nav ul a,
+nav .brand-logo {
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+}
+
+p {
+  line-height: 2rem;
+}
+.team{
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  color: black;
+  font-size: 50px;
+  font-weight: 900px;
+}
+
+.sidenav-trigger {
+  color: #ad0202;
+}
+.sidenav{
+  background-color: rgb(255, 255, 255);
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(250, 134, 2, 0.9);
+}
+  .parallax-container .section {
+    width: 100%;
+}
+/* LOGIN */
+
+
+.logo-page-background{
+  background-image: url(../photos/food.jpg);
+  background-repeat: no-repeat ;
+  background-size: 100%;
+  background-color: wheat;
+}
+
+/* sign up */
+.signUp-background{
+  background-image: url(../photos/bread_meat_vegetables_fish_food.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  background-color: wheat;
+
+}
+
+
+  /* Social media buttons */
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fa-facebook {
+    background: none;
+    color: rgba(19, 63, 39, 0.63);
+  }
+
+  .fa-instagram {
+    background: none;
+    color: rgba(19, 63, 39, 0.63);
+  }
+
+  .fa-youtube {
+    background: none;
+    color: rgba(19, 63, 39, 0.63);
+  }
+
+  .fa-twitter {
+    background: none;
+    color: rgba(19, 63, 39, 0.63);
+  }
+  /* carousel */
+  .carousel-item{
+    height: 20%;
+  }
+/* ================================== */
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .list-group-item {
+    line-height: 2.5;
+  }
+  
+  .red-text,
+  .black-text{
+    font-size: 30px;
+    font-family: 'Fredericka the Great', cursive;
+  }
+  .form{
+    margin-bottom: 100px;
+    color: white;
+    opacity: 0.4;
+  }
+  .font-color{
+    color: white;
+  }
+  
+
+
+
+  
+/* ========================================= */
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
